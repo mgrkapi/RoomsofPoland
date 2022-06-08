@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blurb__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 50px auto;
+  img {
+    margin: 0 auto;
+    height: 140px;
+  }
+  h2 {
+    margin: 20px auto;
+    font-size: 20px;
+  }
+  p {
+    margin: 0 auto;
+
+
+  }
+}
+.container__content {
+  max-width: 250px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
