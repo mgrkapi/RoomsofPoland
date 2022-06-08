@@ -1,18 +1,22 @@
 import './style/main.scss';
-import Home from "./components/Home";
-import Main from "./components/Main";
-import MyGallery from "./components/Gallery";
-import Blurb from "./components/Blurb";
-import Footer from "./components/Footer";
+import {
+    HashRouter,
+    Route,
+    Routes,
+    Router,
+    Link,
+    Switch,
+    NavLink,
+} from 'react-router-dom';
 function App() {
   return (
-      <>
-        <Home/>
-        <Main/>
-          <MyGallery/>
-          <Blurb/>
-          <Footer/>
-      </>
+      <HashRouter>
+          <Routes>
+              <Route index element={<Homepage />} />
+              <Route path="/contact" element={<Contact/>}/>
+              <Route path="/about" element={<AboutUsMain/>}/>
+          </Routes>
+      </HashRouter>
   )
 }
 

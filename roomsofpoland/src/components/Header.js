@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/header.scss";
 import logo from "../images/logo.png"
+import {Link} from "react-router-dom";
 
 export function Header() {
     return (
@@ -9,12 +10,12 @@ export function Header() {
                 <div className="logo"><img src={logo} alt= "logo"/></div>
                 <div className = "menu">
                     <ul>
-                        <li ><a href = "#">O nas</a></li>
-                        <li ><a href = "#">Pokoje</a></li>
-                        <li ><a href = "#">Cennik/Rezerwacje</a></li>
-                        <li ><a href = "#">Atrakcje</a></li>
-                        <li ><a href = "#">Opinie</a></li>
-                        <li ><a href = "#">Kontakt</a></li>
+                        <li ><Link to ="/">O nas</Link></li>
+                        <li ><Link to ="/">Pokoje</Link></li>
+                        <li ><Link to ="/">Cennik/Rezerwacje</Link></li>
+                        <li ><Link to ="/">Atrakcje</Link></li>
+                        <li ><Link to ="/">Opinie</Link></li>
+                        <li ><Link to ="/">Kontakt</Link></li>
                     </ul>
                 </div>
             </div>
