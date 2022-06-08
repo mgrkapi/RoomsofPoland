@@ -1,0 +1,36 @@
+
+footer {
+  background-color: rgba(50, 126, 50, 0.99);
+}
+.footer {
+  display: flex;
+
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.logo {
+  text-align: center;
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+  }
+}
+.address {
+  p {
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+.information {
+  h3 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
