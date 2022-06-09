@@ -3,6 +3,7 @@ import parking from "../images/parking.png";
 import wifi from "../images/wifi.png";
 import garden from "../images/garden.png";
 import grill from "../images/grill.png";
+import "../style/aboutusblurb.scss";
 
 function AboutusBlurb () {
     return (

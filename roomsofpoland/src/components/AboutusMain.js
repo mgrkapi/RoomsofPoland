@@ -1,5 +1,6 @@
 import React from "react";
 import dom from "../images/dom.jpg";
+import "../style/aboutusmain.scss";
 
 function AboutusMain() {
     return (

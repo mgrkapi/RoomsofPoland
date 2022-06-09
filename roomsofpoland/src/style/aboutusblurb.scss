@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+  margin-top: 20px;
+  .section__content {
+    img{
+      width: 100px;
+    }
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+  }
+  p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #878787;
+    display: block;
+    margin: 40px;
+  }
+}
