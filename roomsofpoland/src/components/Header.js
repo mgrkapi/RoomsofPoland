@@ -2,6 +2,7 @@ import React from "react";
 import "../style/header.scss";
 import logo from "../images/logo.png"
 import {Link} from "react-router-dom";
+import about from "../about";
 
 export function Header() {
     return (
@@ -10,7 +11,7 @@ export function Header() {
                 <div className="logo"><img src={logo} alt= "logo"/></div>
                 <div className = "menu">
                     <ul>
-                        <li ><Link to ="/">O nas</Link></li>
+                        <li ><Link to ="/about">O nas</Link></li>
                         <li ><Link to ="/">Pokoje</Link></li>
                         <li ><Link to ="/">Cennik/Rezerwacje</Link></li>
                         <li ><Link to ="/">Atrakcje</Link></li>

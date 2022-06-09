@@ -1,13 +1,15 @@
 import React from "react";
+import "../style/aboutus.scss";
+import AboutusMain from "../components/AboutusMain";
+import AboutusBlurb from "../components/AboutusBlurb";
 
 function AboutUs() {
     return (
         <>
-            <div>
-                <p></p>
-                <img src="#"/>
-            </div>
-
+                <AboutusMain/>
+                <AboutusBlurb/>
         </>
     )
 }
+
+export default AboutUs;

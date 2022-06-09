@@ -8,16 +8,21 @@ import {
     Switch,
     NavLink,
 } from 'react-router-dom';
+import Homepage from './main'
+import About from './about'
+
 function App() {
   return (
       <HashRouter>
           <Routes>
               <Route index element={<Homepage />} />
-              <Route path="/contact" element={<Contact/>}/>
-              <Route path="/about" element={<AboutUsMain/>}/>
+              <Route path="/about" element={<About />} />
+              {/*<Route path="/about" element={<Aboutus/>}/>*/}
           </Routes>
       </HashRouter>
   )
 }
+
+
 
 export default App;
