@@ -6,18 +6,17 @@
 }
 .main__content {
   text-align: center;
+  p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #878787;
+    display: block;
+    margin: 40px;
+  }
 }
 h1 {
   font-size: 2rem;
   font-weight: 300;
   padding-top: 20px;
-}
-p {
-  text-align: justify;
-  font-size: 15px;
-  line-height: 1.7;
-  color: #878787;
-  display: block;
-  margin: 40px;
-
 }
