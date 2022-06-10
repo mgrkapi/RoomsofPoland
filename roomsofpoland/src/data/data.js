@@ -56,7 +56,7 @@ const Data = {
                 title: "Apartament Morski typ:Deluxe",
                 description:
                     "Apartament o powierzchni 18 m2 zlokalizowany jest na parterze. Jest to apartament trzyosobowy z podwójnym łóżkiem, rozkładaną kanapą, prywatną łazienką, aneksem kuchennym oraz telewizorem. W cenę pobytu wliczone są pościel, ręczniki, miejsce parkingowe oraz na terenie całego obiektu nieograniczony dostęp do internetu.",
-                images: [Sea]
+                images: [Sea],
             },
             {
                 id: 7,

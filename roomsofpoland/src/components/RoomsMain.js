@@ -5,12 +5,12 @@ import Hawaje2 from "../images/Hawaje2.jpg";
 function RoomsMain() {
     return (
         <div className="rooms-main">
-            <h2>Pokoje</h2>
+            <h1>Pokoje</h1>
             <div className="rooms-main__content">
                 <img src={Hawaje2} alt="Zdjęcie pokoju"/>
                 <div className="rooms-main__section">
 
-                    <h3>Komfortowe pokoje w Rooms of Poland</h3>
+                    <h2>Komfortowe pokoje w Rooms of Poland</h2>
                     <p>
                         Do Państwa dyspozycji oddajemy 2 i 3 osobowe pokoje ze wspólną łazienką oraz apartamenty z
                         prywatną
@@ -19,7 +19,7 @@ function RoomsMain() {
                         Większym grupom umożliwiamy również wynajem całego obiektu lub poszczególnych domków na
                         wyłączność.
                     </p>
-                    <h3>Udogodnienienia w apartamentach i domku z pokojami</h3>
+                    <h2>Udogodnienienia w apartamentach i domku z pokojami</h2>
                     <p>
                         W każdym apartamencie oraz wspólnej kuchni zorganizowaliśmy aneks kuchenny, w którym można
                         przygotować gorący napój lub posiłek. Jest tu również lodówka, czajnik elektryczny, talerze,
