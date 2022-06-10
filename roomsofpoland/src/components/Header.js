@@ -7,7 +7,7 @@ import rooms from "../rooms";
 
 export function Header() {
     return (
-        <header class="header__main">
+        <header>
             <div className="container">
                 <div className="logo"><img src={logo} alt= "logo"/></div>
                 <div className = "menu">
