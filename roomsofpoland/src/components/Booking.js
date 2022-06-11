@@ -1,10 +1,14 @@
 import React from "react";
 import BookingBanner from "../components/BookingBanner";
+import BookingMain from "../components/BookingMain";
+import BookingPricing from "./BookingPricing";
 
-function Booking () {
+function Booking() {
     return (
         <>
-         <BookingBanner/>
+            <BookingBanner/>
+            <BookingMain/>
+            <BookingPricing/>
         </>
     )
 }
