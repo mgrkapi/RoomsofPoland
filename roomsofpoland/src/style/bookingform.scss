@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 50%;
+}
+.bookForm__info {
+  margin: 10px auto;
+  text-align: center;
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #878787;
+    display: block;
+  }
+
+}
+.bookForm__fields {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
