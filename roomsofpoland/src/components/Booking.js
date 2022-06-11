@@ -1,9 +1,10 @@
 import React from "react";
+import BookingBanner from "../components/BookingBanner";
 
 function Booking () {
     return (
         <>
-            <div>Hello</div>
+         <BookingBanner/>
         </>
     )
 }
