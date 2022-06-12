@@ -13,7 +13,6 @@ function BookingMain() {
                     lub email od obsługi obiektu.</p>
             </div>
             <BookingForm rooms={data.rooms}/>
-
         </>
     )
 }

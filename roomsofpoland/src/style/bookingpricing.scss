@@ -1,0 +1,27 @@
+.booking-pricing__rules {
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(135, 135, 135, 0.75);
+    text-align: center;
+  }
+}
+
+.booking-pricing__description {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.booking-pricing__details {
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
