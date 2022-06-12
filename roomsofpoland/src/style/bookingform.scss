@@ -1,28 +1,100 @@
-form {
+form, .bookForm__fields {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
-  margin: 10px auto;
-  width: 50%;
 }
+form {
+  flex-direction: column;
+  margin: 30px auto;
+  width: 80vw;
+  background-color: rgba(243, 167, 184, 0.22);
+  border-radius: 5px;
+  position: relative;
+
+  .flaming-left, .flaming-right {
+    position: absolute;
+    top: 40%;
+    width: 150px;
+    height: 200px;
+    @media only screen and (max-width: 910px) {
+      display: none;
+    }
+  }
+
+  .flaming-left {
+    left: 16px;
+  }
+
+  .flaming-right {
+    right: 16px;
+  }
+}
+
 .bookForm__info {
   margin: 10px auto;
   text-align: center;
+
+  h2 {
+    font-size: 25px;
+    padding: 20px;
+  }
+
   p {
     font-size: 15px;
     line-height: 1.7;
-    color: #878787;
-    display: block;
+    color: rgba(135, 135, 135, 0.75);
+  }
+}
+
+.bookForm__content {
+  margin: 0 auto;
+
+  .bookForm__fields {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    label {
+      padding-right: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    select, textarea {
+      margin-left: 20px;
+    }
   }
 
-}
-.bookForm__fields {
-  display: flex;
-  flex-direction: column;
-  label {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
+  input, textarea, select {
+    border-radius: 4px;
+  }
+
+  select, input {
+    border: 2px solid lightgray;
+  }
+
+  input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  input:focus {
+    border: 3px #807f7f solid;
+  }
+
+  input[type="submit"] {
+    margin: 0 auto;
+  }
+
+  textarea {
+    height: auto;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    resize: none;
+  }
+
+  select {
+    padding: 16px 20px;
   }
 }
