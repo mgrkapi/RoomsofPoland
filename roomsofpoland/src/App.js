@@ -12,6 +12,7 @@ import Homepage from './main'
 import About from './about'
 import RoomsPage from './rooms';
 import Reservation from './reservation';
+import ToSee from './attractions';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/rooms" element={<RoomsPage />} />
               <Route path="/reservation" element={<Reservation />} />
+              <Route path="/attractions" element={<ToSee />} />
               {/*<Route path="/about" element={<Aboutus/>}/>*/}
           </Routes>
       </HashRouter>
