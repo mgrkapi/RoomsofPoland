@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/bookingmain.scss";
-import BookingForm from "./BookingForm";
+import ContactForm from "./ContactForm";
 import data from "../data/data";
 
 function BookingMain() {
@@ -12,7 +12,7 @@ function BookingMain() {
                     telefoniczny
                     lub email od obsługi obiektu.</p>
             </div>
-            <BookingForm rooms={data.rooms}/>
+            <ContactForm rooms={data.rooms}/>
         </>
     )
 }
