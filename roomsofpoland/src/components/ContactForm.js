@@ -1,25 +1,35 @@
-import React, { useRef } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import emailjs from '@emailjs/browser';
 import "../style/contactform.scss";
-import flamingleft from "../images/flamingleft.png"
+import flamingleft from "../images/flamingleft.png";
 
  const ContactForm = (props) => {
 
     const form = useRef();
 
+const[submit, setSubmit] = useState();
+
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_q4c62ps', 'template_it1gn6q', form.current, 'iAHZ1x3ZJXrlgHWpw')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+            .then(() =>
+                setSubmit("Dziękujemy, formularz został wysłany!")
+            )
+                .catch(() =>
+                setSubmit("Wiadomość nie została wysłana")
+            );
     };
 
+    useEffect(() => {
+        document.p = `${submit}`;
+    }, [submit]);
+
+    const handleClick = () => {
+        setSubmit(() => submit);
+    }
+
     return (
-        <div>
         <form ref={form} onSubmit={sendEmail}>
             <img className="flaming-left" src={flamingleft} alt="obrazek przedstawiający flaminga"/>
             <img className="flaming-right" src={flamingleft} alt="obrazek przedstawiający flaminga"/>
@@ -74,11 +84,15 @@ import flamingleft from "../images/flamingleft.png"
                     <textarea name="message"></textarea>
                 </div>
                 <div className="bookForm__fields">
-                    <input type="submit" value="Wyślij"/>
+                    <input type="submit" onClick={handleClick} value="Wyślij"/>
                 </div>
             </div>
+            <div className="message">
+                <p>
+                        {submit}
+                </p>
+            </div>
         </form>
-        </div>
     );
 };
 
