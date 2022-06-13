@@ -1,14 +1,15 @@
 import React from "react";
 import BookingBanner from "../components/BookingBanner";
 import BookingMain from "../components/BookingMain";
-import BookingPricing from "./BookingPricing";
+import BookingPricing from "../components/BookingPricing";
+import pricing from "../data/pricing";
 
 function Booking() {
     return (
         <>
             <BookingBanner/>
             <BookingMain/>
-            <BookingPricing/>
+            <BookingPricing  room={pricing.room} apartament={pricing.apartament}/>
         </>
     )
 }
