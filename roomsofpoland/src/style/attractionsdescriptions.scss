@@ -1,5 +1,8 @@
-.attractions {
+.attractions, .attractions__description {
   display: flex;
+}
+
+.attractions {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 100%;
@@ -9,14 +12,14 @@
   border-radius: 5px;
   width: 300px;
   height: 290px;
-  margin: 20px auto;
   padding: 20px;
-  display: flex;
+  margin: 20px auto;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  position: relative;
+  box-shadow: 0 0 1em lightpink;
   p {
-    text-align: center;
+    text-align: justify;
     margin: 20px;
     font-size: 15px;
     line-height: 1.7;
@@ -33,6 +36,15 @@
     padding: 10px;
     border-radius: 5px;
     border: none;
-
+    position: absolute;
+    top: 75%;
+    right: 40%;
+    background-color: #c4c1c1;
+  }
+  img {
+    height: 40px;
+    width: 45px;
+    display: block;
+    margin: 20px auto;
   }
 }
