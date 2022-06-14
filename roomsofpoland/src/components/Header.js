@@ -7,6 +7,7 @@ import rooms from "../rooms";
 import reservation from "../reservation"
 import main from "../main";
 import attractions from "../attractions";
+import opinionsFAQpage from "../opinionsFAQpage";
 
 export function Header() {
     return (
@@ -19,7 +20,7 @@ export function Header() {
                         <li ><Link to ="/rooms">Pokoje</Link></li>
                         <li ><Link to ="/reservation">Cennik/Rezerwacje</Link></li>
                         <li ><Link to ="/attractions">Atrakcje</Link></li>
-                        <li ><Link to ="/">Opinie</Link></li>
+                        <li ><Link to ="/opinionsFAQ">Częste pytania/Opinie</Link></li>
                         <li ><Link to ="/">Kontakt</Link></li>
                     </ul>
                 </div>
