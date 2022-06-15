@@ -1,7 +1,11 @@
 import React from 'react';
+import FAQ from "../components/FAQ";
+import questions from "../data/questions";
 
 function OpinionsFAQ () {
-    return <div></div>
+    return (
+    <FAQ question = {questions}/>
+    )
 }
 
 export default OpinionsFAQ;

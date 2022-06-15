@@ -20,7 +20,7 @@ export function Header() {
                         <li ><Link to ="/rooms">Pokoje</Link></li>
                         <li ><Link to ="/reservation">Cennik/Rezerwacje</Link></li>
                         <li ><Link to ="/attractions">Atrakcje</Link></li>
-                        <li ><Link to ="/opinionsFAQ">Częste pytania/Opinie</Link></li>
+                        <li ><Link to ="/opinionsFAQpage">Częste pytania/Opinie</Link></li>
                         <li ><Link to ="/">Kontakt</Link></li>
                     </ul>
                 </div>
