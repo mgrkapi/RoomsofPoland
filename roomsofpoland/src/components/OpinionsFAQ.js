@@ -1,10 +1,15 @@
 import React from 'react';
 import FAQ from "../components/FAQ";
 import questions from "../data/questions";
+import Opinions from "../components/Opinions";
+import opinions from "../data/opinions";
 
-function OpinionsFAQ () {
+function OpinionsFAQ() {
     return (
-    <FAQ question = {questions}/>
+        <>
+            <FAQ question={questions}/>
+            <Opinions opinions={opinions}/>
+        </>
     )
 }
 

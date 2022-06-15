@@ -1,25 +1,20 @@
 import React from "react";
+import "../style/faq.scss";
 
 function FAQ({...props}) {
 
     return (
-        <div>
+        <div className="FAQ-description">
             <h1>
                 Najczęściej zadawane pytania
             </h1>
-            <p>
-                Poniżej znajdą Państwo pytania, które najczęściej zadają nasi Goście.
-            </p>
-            <p>
-                Jeśli macie Państwo inne pytania lub wątpliwości to prosimy o kontakt.
-            </p>
 
             {(props.question.map(function(faq) {
                         return (
 
-                                <div key={faq.id}>
-                                <p >{faq.question}</p>
-                                <p >{faq.answer}</p>
+                                <div className="question-answer" key={faq.id}>
+                                <p className="question">{faq.question}</p>
+                                <p className="answer">{faq.answer}</p>
                                 </div>
                         )
                     }

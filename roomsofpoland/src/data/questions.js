@@ -19,12 +19,12 @@ const Questions = [
     {
         id:4,
         question: "Jakie są godziny zameldowania i wymeldowania?",
-        answer: "Zameldowanie zaczyna się o 15:00 a wymeldować się można do 11:00",
+        answer: "Zameldowanie zaczyna się o 15:00 a wymeldować się można do 11:00.",
     },
     {
         id:5,
         question: "Czy mogę zaparkować samochód na terenie obiektu?",
-        answer: "Na terenie obiektu jest dostepny bezpłatny parking",
+        answer: "Na terenie obiektu jest dostepny bezpłatny parking.",
     },
 ]
 
