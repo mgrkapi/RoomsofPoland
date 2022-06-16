@@ -29,7 +29,7 @@ function Footer () {
                         <a href = "#">Regulamin obiektu</a>
                     </div>
                     <div className="links">
-                        <a href = "#"><img src ={facebook} alt = "Facebook"/></a>
+                        <a href = "https://www.facebook.com/roomsofpoland"><img src ={facebook} alt = "Facebook"/></a>
                     </div>
                 </div>
             </div>

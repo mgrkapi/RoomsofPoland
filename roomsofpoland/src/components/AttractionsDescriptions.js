@@ -12,7 +12,7 @@ function AttractionsDescriptions (props) {
                         <p>{attraction.description}</p>
                     </div>
                     <div className="button">
-                        <button><a href={attraction.url}>Szczegóły</a></button>
+                        <button><a href={attraction.url}>Zobacz</a></button>
                     </div>
 
                 </div>

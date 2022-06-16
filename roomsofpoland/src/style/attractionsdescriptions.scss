@@ -11,7 +11,7 @@
   border: 1px solid lightpink;
   border-radius: 5px;
   width: 300px;
-  height: 290px;
+  height: 310px;
   padding: 20px;
   margin: 20px auto;
   flex-direction: column;
@@ -32,14 +32,18 @@
     font-size: 20px;
   }
   button {
-    margin-top: 20px;
     padding: 10px;
     border-radius: 5px;
     border: none;
     position: absolute;
-    top: 75%;
+    bottom: 5%;
     right: 40%;
     background-color: #c4c1c1;
+    a {
+      text-decoration: none;
+      color: mediumpurple;
+      font-weight: bold;
+    }
   }
   img {
     height: 40px;

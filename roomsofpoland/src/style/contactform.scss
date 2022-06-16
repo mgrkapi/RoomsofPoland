@@ -48,11 +48,15 @@ form {
 
 .bookForm__content {
   margin: 0 auto;
+  max-width: 100%;
 
   .bookForm__fields {
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+    input:hover {
+      background-color: lightpink;
+    }
 
     label {
       padding-right: 20px;

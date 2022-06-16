@@ -11,7 +11,6 @@ footer {
 
 }
 .logo {
-  text-align: center;
   img {
     width: 70px;
     height: 70px;
@@ -35,6 +34,10 @@ footer {
     color: #fff;
     text-align: center;
     padding-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
   }
 }
 
