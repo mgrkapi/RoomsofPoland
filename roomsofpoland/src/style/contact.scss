@@ -2,6 +2,16 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: flex-start;
+    .contact-address, .contact-email, .contact-phone {
+      margin: 20px;
+    }
+  }
+}
 .contact-phone, .contact-email {
   display: flex;
   align-items: center;
@@ -18,6 +28,8 @@
   line-height: 1.5rem;
 }
 .contact-address {
+  display: flex;
+  justify-content: space-around;
   img {
     height: 80px;
     width: 80px;

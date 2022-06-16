@@ -1,4 +1,3 @@
-import parking from '../images/parking.png'
 import amusementpark from '../images/amusementpark.png';
 import beach from '../images/beach.png';
 import car from '../images/car.png';

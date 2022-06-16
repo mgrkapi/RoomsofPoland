@@ -25,7 +25,6 @@ function AboutusMain() {
                     wspólnego biesiadowania. W przestronnym ogrodzie każdy znajdzie miejsce do relaksu, opalania czy
                     zabawy.
                 </p>
-
             </div>
             <img src={dom} alt="zdjęcie domu"/>
         </div>
