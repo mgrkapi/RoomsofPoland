@@ -7,8 +7,9 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin: 50px auto;
-  img {
+  img, a {
     margin: 0 auto;
     height: 140px;
   }
@@ -19,8 +20,8 @@
   p {
     margin: 0 auto;
     text-align: justify;
+    line-height: 1.7rem;
     font-size: 15px;
-    line-height: 1.7;
     color: #878787;
     display: block;
   }
@@ -29,7 +30,10 @@
   max-width: 250px;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-start;
   flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 0 1em darkgreen;
+  height: 435px;
+  margin: 20px;
 }
