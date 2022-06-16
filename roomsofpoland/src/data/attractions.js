@@ -46,7 +46,7 @@ const attractions = [
         id: 5,
         title: "Spływy kajakowe Rawką",
         description:
-            "Rawka przepływa przez Bolimowski Park Krajobrazowy. Wybór tras o różnej długości i różnym stopniu trudności",
+            "Rawka przepływa przez Bolimowski Park Krajobrazowy. Wybór tras o różnej długości i różnym stopniu trudności.",
         url: "https://www.bolimow.pl/94,rzeka-rawka",
         icon: [kayak],
     },

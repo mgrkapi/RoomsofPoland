@@ -1,0 +1,26 @@
+.contact-details, .contact-address{
+  display: flex;
+  justify-content: space-around;
+}
+.contact-phone, .contact-email {
+  display: flex;
+  align-items: center;
+  p {
+    margin-left: 20px;
+  }
+
+}
+
+.address-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  line-height: 1.5rem;
+}
+.contact-address {
+  img {
+    height: 80px;
+    width: 80px;
+    margin-top: 15px;
+  }
+}

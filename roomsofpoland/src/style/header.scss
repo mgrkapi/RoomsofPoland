@@ -1,16 +1,11 @@
-header {
+.navbar {
+  height: 60px;
   width: 100%;
-  //background-color: rgba(0,0,0,0.2);
-  background-color: darkgreen;
-  //position: absolute;
-}
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  justify-items: center;
+  position: relative;
+  padding: 0.5rem 0;
+  background-color: darkgreen;
 }
 
 .logo {
@@ -20,18 +15,78 @@ header {
     border-radius: 50%;
   }
 }
-
-ul {
+.menu {
+  margin-left: auto;
+}
+.menu ul {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
+  padding: 0;
 }
-
-li {
-  margin: 20px;
+.menu li {
+  list-style-type: none;
+  margin: 0 1rem;
 }
-
-a {
+.menu li a {
   text-decoration: none;
   color: white;
+  display: block;
+  width: 100%;
+}
+.hamburger {
+  padding: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+  background: none;
+  border: none;
+  img {
+    height: 40px;
+    width: 40px;
+  }
+
+}
+.hamburger:hover {
+  background-color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu ul {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: rgba(0, 100, 0, 0.78);
+    border-top: 1px solid black;
+    text-align: center;
+    display:none;
+  }
+  .menu li {
+    text-align: center;
+    margin: 0;
+  }
+  .menu li a {
+    color: white;
+    width: 100%;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+  .menu li:hover {
+    background-color: #eee;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu.expanded ul {
+    display: block;
+  }
 }

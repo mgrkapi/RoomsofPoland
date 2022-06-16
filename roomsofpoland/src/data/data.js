@@ -71,42 +71,33 @@ const Data = {
         icons: [
             {
                 id: 1,
-                alt: "Ikonka przedstawiająca ogród",
                 src: garden,
-                title: "Widok na ogród",
             },
             {
                 id: 2,
-                alt: "Ikonka przedstawiająca wifi",
                 src: wifi,
             },
             {
                 id: 3,
-                alt: "Ikonka przedstawiająca grill",
                 src: grill,
             },
             {
                 id: 4,
-                alt: "Ikonka przedstawiająca parking",
                 src: parking,
             },
             {
                 id: 5,
-                alt: "Ikonka przedstawiająca łazienkę",
                 src: bathroom,
             },
             {
                 id: 6,
-                alt: "Ikonka przedstawiająca taras",
                 src: terrace,
             },
             {
                 id: 7,
-                alt: "Ikonka przedstawiająca telewizor",
                 src: screen,
             },
         ],
-        images: [Aruba]
     }
 
 
