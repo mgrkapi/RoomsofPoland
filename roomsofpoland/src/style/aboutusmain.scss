@@ -1,13 +1,17 @@
-.description {
-  margin-top: 20vh;
-}
 .main-content {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+
+  @media screen and (max-width: 890px) {
+    flex-wrap: wrap;
+  }
+
   img {
-    width: 900px;
-    height: 500px;
-    margin-top: 13vh;
+    width: 370px;
+    height: 420px;
+    margin-top: 10vh;
+    padding-right: 20px;
   }
   h2 {
     text-align: center;
@@ -24,4 +28,3 @@
     margin: 40px;
   }
 }
-
