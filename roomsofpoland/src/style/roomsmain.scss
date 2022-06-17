@@ -1,4 +1,7 @@
 .rooms-main {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
   h1 {
     text-align: center;
     font-size: 2rem;
@@ -8,8 +11,13 @@
 
 .rooms-main__content {
   display:flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   margin: 20px 20px;
+  border-radius: 2px;
+  box-shadow: 0 0 1em #006400;
+  max-width: 1080px;
+
   @media screen and (max-width: 1152px) {
     flex-wrap: wrap;
     justify-content: center;
@@ -23,11 +31,12 @@
   }
   p{
     text-align: justify;
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: 1.5rem;
     font-size: 15px;
     color: #878787;
     display: block;
+    padding: 10px;
   }
   img {
     height: 400px;

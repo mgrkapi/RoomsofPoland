@@ -4,24 +4,23 @@ import {collection, getDocs} from "firebase/firestore";
 import {db} from "../config";
 
 
-function RoomsDescription() {
 
+function RoomsDescription() {
 
     const [rooms, setRooms] = useState([]);
 
-    const querySnapshot = async () => {
+    const Data = async () => {
         const roomsDB = collection(db, "rooms" );
         //przypisanie ścieżki
         getDocs(roomsDB)
             //pobranie dokumentów ze ścieżki
             .then(snapshot => {
-                    //sprawdź kolekcję
+                    //sprawdzanie kolekcji
                     setRooms(snapshot.docs.map(doc => (
-                        //wrzuć każdy dokument osobno zdestrukturyzowany
+                        //dodawanie każdego dokumentu osobno (zdestrukturyzowany)
                         {...doc.data(), id: doc.id}
-                    //    jak powyższe wykona się to wrzuca wszystko do rooms
+                    //    jak powyższe wykona się, to dodaje wszystko do rooms
                     )))
-
                 }
             )
         return rooms
@@ -29,7 +28,7 @@ function RoomsDescription() {
     console.log(rooms)
 
     useEffect(() => {
-        querySnapshot();
+        Data();
     }, [])
     //wywołanie funkcji i zatrzymanie tablicą (dodana pusta tablica, żeby się nie zapętlała)
 
@@ -50,7 +49,6 @@ function RoomsDescription() {
                                     {room.description}
                                 </p>
                                 <div className="box-icons">
-
                                 </div>
                             </div>
                         </div>
