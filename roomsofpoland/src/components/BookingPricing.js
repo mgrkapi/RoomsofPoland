@@ -4,6 +4,7 @@ import apartamenty from "../images/apartamenty.jpg";
 import "../style/bookingpricing.scss";
 
 function BookingPricing(props) {
+
     return (
         <div className="booking-pricing">
             <div className="booking-pricing__rules">

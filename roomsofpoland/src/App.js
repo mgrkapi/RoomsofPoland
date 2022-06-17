@@ -28,7 +28,6 @@ function App() {
               <Route path="/attractions" element={<ToSee />} />
               <Route path="/opinionsFAQpage" element={<OpinionsFAQpage />} />
               <Route path="/contact" element={<ContactPage />} />
-              {/*<Route path="/about" element={<Aboutus/>}/>*/}
           </Routes>
       </HashRouter>
   )

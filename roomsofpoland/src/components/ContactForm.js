@@ -9,7 +9,6 @@ const ContactForm = (props) => {
 
     const [submit, setSubmit] = useState();
 
-
     const sendEmail = (e) => {
         e.preventDefault();
 

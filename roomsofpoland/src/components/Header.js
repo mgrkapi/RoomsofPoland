@@ -3,13 +3,6 @@ import "../style/header.scss";
 import logo from "../images/logo.png";
 import menu from "../images/menu.png";
 import {Link} from "react-router-dom";
-import about from "../about";
-import rooms from "../rooms";
-import reservation from "../reservation"
-import main from "../main";
-import attractions from "../attractions";
-import opinionsFAQpage from "../opinionsFAQpage";
-import contact from "../contact";
 import {useState} from "react";
 
 export function Header() {
