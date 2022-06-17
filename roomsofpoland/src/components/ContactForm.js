@@ -3,11 +3,12 @@ import emailjs from '@emailjs/browser';
 import "../style/contactform.scss";
 import flamingleft from "../images/flamingleft.png";
 
- const ContactForm = (props) => {
+const ContactForm = (props) => {
 
     const form = useRef();
 
-const[submit, setSubmit] = useState();
+    const [submit, setSubmit] = useState();
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -16,7 +17,7 @@ const[submit, setSubmit] = useState();
             .then(() =>
                 setSubmit("Dziękujemy, formularz został wysłany!")
             )
-                .catch(() =>
+            .catch(() =>
                 setSubmit("Wiadomość nie została wysłana")
             );
     };
@@ -28,6 +29,7 @@ const[submit, setSubmit] = useState();
     const handleClick = () => {
         setSubmit(() => submit);
     }
+
 
     return (
         <form ref={form} onSubmit={sendEmail}>
@@ -89,7 +91,7 @@ const[submit, setSubmit] = useState();
             </div>
             <div className="message">
                 <p>
-                        {submit}
+                    {submit}
                 </p>
             </div>
         </form>
