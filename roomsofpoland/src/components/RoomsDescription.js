@@ -1,19 +1,46 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "../style/roomsdescription.scss";
+import {collection, getDocs} from "firebase/firestore";
+import {db} from "../config";
 
 
-function RoomsDescription(props) {
+function RoomsDescription() {
 
-    const getIcon = id => props.icons.find(el => el.id === id);
+    const [rooms, setRooms] = useState([]);
+
+    const querySnapshot = async () => {
+        const roomsDB = collection(db, "rooms" );
+        //przypisanie ścieżki
+        getDocs(roomsDB)
+            //pobranie dokumentów ze ścieżki
+            .then(snapshot => {
+                    //sprawdź kolekcję
+                    setRooms(snapshot.docs.map(doc => (
+                        //wrzuć każdy dokument osobno zdestrukturyzowany
+                        {...doc.data(), id: doc.id}
+                    //    jak powyższe wykona się to wrzuca wszystko do rooms
+                    )))
+
+                }
+            )
+        return rooms
+    }
+    console.log(rooms)
+
+    useEffect(() => {
+        querySnapshot();
+    }, [])
+    //wywołanie funkcji i zatrzymanie tablicą (dodana pusta tablica, żeby się nie zapętlała)
 
     return (
         <>
             <div className="rooms-section">
                 <h2>Nasze pokoje</h2>
-                {props.rooms.map(room => (
-                    <div className="rooms-details" key={room.id}>
+                {rooms.map(room => (
+                    //mapa z tego co zostało przekazane do usestate z bazy danych
+                    <div className="rooms-details" key={room.uid}>
                         <div className="box">
-                            <img src={room.images} alt={room.images.alt}/>
+                            <img src={room.image} alt="Zdjęcie pokoju"/>
                             <div className="box-description">
                                 <h3>
                                     {room.title}
@@ -21,12 +48,7 @@ function RoomsDescription(props) {
                                 <p>
                                     {room.description}
                                 </p>
-                                <div className = "box-icons">
-                                <img src={getIcon(1) ? getIcon(1).src : "DefaultIcon"}/>
-                                <img src={getIcon(2) ? getIcon(2).src : "DefaultIcon"}/>
-                                <img src={getIcon(3) ? getIcon(3).src : "DefaultIcon"}/>
-                                <img src={getIcon(4) ? getIcon(4).src : "DefaultIcon"}/>
-                                <img src={getIcon(5) ? getIcon(5).src : "DefaultIcon"} />
+                                <div className="box-icons">
                                 </div>
                             </div>
                         </div>
