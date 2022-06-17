@@ -13,6 +13,8 @@ import About from './about'
 import RoomsPage from './rooms';
 import Reservation from './reservation';
 import ToSee from './attractions';
+import OpinionsFAQpage from './opinionsFAQpage';
+import ContactPage from './contact';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
               <Route path="/rooms" element={<RoomsPage />} />
               <Route path="/reservation" element={<Reservation />} />
               <Route path="/attractions" element={<ToSee />} />
+              <Route path="/opinionsFAQpage" element={<OpinionsFAQpage />} />
+              <Route path="/contact" element={<ContactPage />} />
               {/*<Route path="/about" element={<Aboutus/>}/>*/}
           </Routes>
       </HashRouter>

@@ -6,6 +6,7 @@ import {db} from "../config";
 
 function RoomsDescription() {
 
+
     const [rooms, setRooms] = useState([]);
 
     const querySnapshot = async () => {
@@ -49,6 +50,7 @@ function RoomsDescription() {
                                     {room.description}
                                 </p>
                                 <div className="box-icons">
+
                                 </div>
                             </div>
                         </div>

@@ -19,6 +19,19 @@
   margin: 40px 10px;
   border-radius: 2px;
   box-shadow: 0 0 1em lightpink;
+  @media screen and (max-width: 890px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  img {
+    width: 400px;
+    height: 270px;
+    @media screen and (max-width: 465px) {
+      width: 250px;
+      height: 150px;
+    }
+    }
   .box-description {
     flex-direction: column;
     h3 {
@@ -33,10 +46,7 @@
       margin-top: 20px;
     }
   }
-  img {
-    width: 400px;
-    height: 270px;
-  }
+
   p {
     text-align: justify;
     margin: 20px;

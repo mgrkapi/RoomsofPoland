@@ -6,9 +6,15 @@ function AttractionsDescriptions (props) {
         <div className="attractions">
             {props.attractions.map(attraction => (
                 <div className="attractions__description" key={attraction.id}>
-                    <h2>{attraction.title}</h2>
-                    <p>{attraction.description}</p>
-                    <button><a href={attraction.url}>Szczegóły</a></button>
+                    <div>
+                        <img src={attraction.icon} alt=""/>
+                        <h2>{attraction.title}</h2>
+                        <p>{attraction.description}</p>
+                    </div>
+                    <div className="button">
+                        <button><a href={attraction.url}>Zobacz</a></button>
+                    </div>
+
                 </div>
             ))}
         </div>

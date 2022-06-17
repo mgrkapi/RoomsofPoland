@@ -1,14 +1,15 @@
-import Contact from '../src/components/Contact';
 import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
+import OpinionsFAQ from "../src/components/OpinionsFAQ";
 
-function ContactPage() {
+function OpinionsFAQpage() {
     return (
         <>
             <Header/>
-            <Contact/>
+            <OpinionsFAQ/>
             <Footer/>
         </>
     )
 }
-export default ContactPage;
+
+export default OpinionsFAQpage;

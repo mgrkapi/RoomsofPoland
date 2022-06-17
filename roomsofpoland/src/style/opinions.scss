@@ -1,0 +1,28 @@
+.opinions__title {
+  text-align: center;
+  p {
+    margin: 20px;
+    font-size: 17px;
+    color: #878787;
+  }
+}
+
+.opinions__description {
+display: flex;
+  margin: 20px;
+  @media screen and (max-width: 835px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+img {
+  padding-bottom: 20px;
+}
+}
+.opinions-details {
+
+  img {
+    border-radius: 5px;
+    border: 2px solid lightgreen;
+    margin: 20px;
+  }
+}
