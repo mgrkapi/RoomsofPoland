@@ -1,14 +1,33 @@
 footer {
   background-color: rgba(50, 126, 50, 0.99);
-  max-width: 100%;
+  flex: 1;
 }
 
 .footer {
   display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1.25rem 1.875rem;
+  justify-content: space-evenly;
 }
+
+.address, .contact, .links, .logo {
+  padding: 1.25rem;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.address, .contact {
+  font-size: 15px;
+  line-height: 1.7;
+  color: white;
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
 .logo {
   img {
     width: 70px;
@@ -16,25 +35,3 @@ footer {
     border-radius: 50%;
   }
 }
-.address {
-  p {
-    text-align: justify;
-    font-size: 15px;
-    line-height: 1.7;
-    color: white;
-    display: block;
-    margin: 40px;
-  }
-}
-
-.information {
-  h3 {
-    color: #fff;
-    padding-bottom: 10px;
-  }
-  a {
-    text-decoration: none;
-    color: white;
-  }
-}
-
