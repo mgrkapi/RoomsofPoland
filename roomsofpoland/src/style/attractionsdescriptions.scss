@@ -38,12 +38,16 @@
     position: absolute;
     bottom: 5%;
     right: 40%;
-    background-color: #c4c1c1;
+    background-color: rgba(0,0,0,.07);
+    transition: opacity ease-in-out 0.3s;
     a {
       text-decoration: none;
       color: mediumpurple;
       font-weight: bold;
     }
+  }
+  button:hover {
+    opacity: 0.4;
   }
   img {
     height: 40px;

@@ -10,15 +10,15 @@ function AttractionsDescriptions () {
 
     const DataAttr = async () => {
         const attractionsDB = collection(db, "attractions" );
-        //przypisanie ścieżki
+        //path assignment
         getDocs(attractionsDB)
-            //pobranie dokumentów ze ścieżki
+            //fetch documents from path
             .then(snapshot => {
-                    //sprawdzanie kolekcji
+                    //checking collection
                     setAttractions(snapshot.docs.map(doc => (
-                        //dodawanie każdego dokumentu osobno (zdestrukturyzowany)
+                        //adding each document separately (destructured)
                         {...doc.data(), id: doc.id}
-                        //    jak powyższe wykona się, to dodaje wszystko do attraction
+                        //    if above is done, everything is added to attraction
                     )))
                 }
             )

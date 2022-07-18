@@ -17,7 +17,7 @@ function Footer() {
                         <p>ul. Wypoczynkowa 4</p>
                         <p>96 - 300 Krzyżówka</p>
                     </div>
-                    <div className="contact">
+                    <div className="contact-rooms">
                         <h3>Kontakt</h3>
                         <p>+ 48 507 004 901</p>
                         <p>email: roomsofpoland@gmail.com</p>
