@@ -85,7 +85,7 @@ const ContactForm = (props) => {
                     <textarea name="message"></textarea>
                 </div>
                 <div className="bookForm__fields">
-                    <input type="submit" onClick={handleClick} value="Wyślij"/>
+                    <input type="submit" onClick={handleClick} value="Wyślij" disabled/>
                 </div>
             </div>
             <div className="message">

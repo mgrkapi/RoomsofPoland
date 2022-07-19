@@ -1,7 +1,7 @@
 const Questions = [
     {
         id:1,
-        question: "Czy mozna u Państwa płacić bonem turystycznym?",
+        question: "Czy można u Państwa płacić bonem turystycznym?",
         answer: "Jeszcze nie uruchomiliśmy możliwości takiej płatności dla naszych gości."
     }
     ,
@@ -24,7 +24,7 @@ const Questions = [
     {
         id:5,
         question: "Czy mogę zaparkować samochód na terenie obiektu?",
-        answer: "Na terenie obiektu jest dostepny bezpłatny parking.",
+        answer: "Na terenie obiektu jest dostępny bezpłatny parking.",
     },
 ]
 
